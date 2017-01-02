@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (isConnected()) {
             LoadTask loadTask = new LoadTask(this, this);
-            loadTask.execute("slipknot", "korn", "eminem");
+            loadTask.execute("Ellie Goulding");
         } else {
             Toast.makeText(this, "Check internet connection. App work in offline mode", Toast.LENGTH_LONG).show();
             updateList("");
