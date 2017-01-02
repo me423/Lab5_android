@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="?pageBackground">
+   <LinearLayout
+
+        android:id="@+id/buttonsPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/etArtistName"
+            style="?textRegular"
+            android:hint="Artist name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:textAlignment="center"
+            android:padding="4dp"/>
+        <Button
+            android:layout_width="0dp"
+            style="?button"
+
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:onClick="onSearch"
+
+            android:textAlignment="center"
+            android:padding="4dp"/>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lvMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+</LinearLayout>
